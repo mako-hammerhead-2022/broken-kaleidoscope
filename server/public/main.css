@@ -12,3 +12,7 @@ div {
   display: flex;
   flex-wrap: wrap;
 }
+
+div:hover{
+  cursor: pointer;
+}
