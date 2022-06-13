@@ -30,9 +30,15 @@ const Pixel = () => {
     )
   }
 
+  const allYellow = () => {
+    setPixelStyle (
+      {...pixelStyle, backgroundColor: '#FFFF00'}
+      )
+  }
+
 
   return (
-  <div style={pixelStyle} onClick={changeColor} onMouseEnter={allGreen} onMouseLeave={revertColour}/>
+  <div style={pixelStyle} onClick={changeColor} onMouseEnter={allGreen} onMouseLeave={revertColour} onDragEnter={allYellow} draggable={true}/>
   )
 }
 
