@@ -5,7 +5,69 @@ const App = () => {
   
   return (
     <>
-    <Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+    <Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel /><Pixel />
+ 
     </>
 )}
 
