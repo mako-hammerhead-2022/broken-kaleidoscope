@@ -16,8 +16,15 @@ function Pixel () {
     })
   }
 
+  const mouseHoverHandler = (evt) => {
+    setStyle ({
+      ...style,
+      backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+    })
+  }
+
   return (
-    <div style={style} onClick={clickHandler}></div>
+    <div style={style} onClick={clickHandler} onMouseEnter={mouseHoverHandler}></div>
   )
 }
 
