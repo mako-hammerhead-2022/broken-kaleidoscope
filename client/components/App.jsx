@@ -1,5 +1,5 @@
 import React from 'react'
-import Pixel from './Whatever.jsx'
+import Pixel from './Pixel.jsx'
 
 const App = () => {
   return (
