@@ -1,10 +1,10 @@
 import React from 'react'
-import ReturnDiv from './ReturnDiv.jsx'
+import Pixel from './Pixel.jsx'
 
 const App = () => {
   return <>
   <div>React development has begun!</div>
-  <ReturnDiv/>
+  <Pixel/>
 
   </>
 
