@@ -2,7 +2,13 @@ import React from 'react'
 
 function Pixel () {
   return (
-    <div></div>
+    <div style={{
+      fontFamily: 'Times New Roman',
+      height: '10px',
+      width: '10px',
+      backgroundColor: 'cornflowerblue'
+
+    }}></div>
   )
 }
 
