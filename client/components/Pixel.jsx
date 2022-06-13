@@ -9,8 +9,15 @@ function Pixel () {
     backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
   })
 
+  const clickHandler = (evt) => {
+    setStyle ({
+      ...style,
+      backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+    })
+  }
+
   return (
-    <div style={style}></div>
+    <div style={style} onClick={clickHandler}></div>
   )
 }
 
