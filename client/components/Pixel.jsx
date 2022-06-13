@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 const Pixel = () => {
-  const pixelSize = 3
+  const pixelSize = 50
 
   const [style, setStyle] = useState({height: `${pixelSize}px`, width: `${pixelSize}px`, backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}` })
 
@@ -26,6 +26,13 @@ const Pixel = () => {
   const dragEnterHandler = (evt) => {
     setStyle({height: `${pixelSize}px`, width: `${pixelSize}px`, backgroundColor: 'yellow' })
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStyle({height: `${pixelSize}px`, width: `${pixelSize}px`, backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}` })
+    }, 2000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
   <div style={style} draggable={true} onClick={clickHandler} onMouseEnter={mouseEnter} onContextMenu={contextMenu} onDoubleClick={dblClickHandler} onDragEnter={dragEnterHandler}>

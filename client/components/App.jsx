@@ -6,7 +6,7 @@ import Pixel from './Pixel'
 */
 
 const App = () => {
-  const pixelArr = Array.from({length:100000}, (v,i) => <Pixel key={i}/>);
+  const pixelArr = Array.from({length:500}, (v,i) => <Pixel key={i}/>);
   return pixelArr
 }
 
