@@ -17,8 +17,16 @@ const Pixel = () => {
     setStyle({height: '50px', width: '50px', backgroundColor: 'black' })
   }
 
+  const dblClickHandler = (evt) => {
+    setStyle({height: '50px', width: '50px', backgroundColor: 'white' })
+  }
+
+  const dragEnterHandler = (evt) => {
+    setStyle({height: '50px', width: '50px', backgroundColor: 'yellow' })
+  }
+
   return (
-  <div style={style} onClick={clickHandler} onMouseEnter={mouseEnter} onContextMenu={contextMenu}>
+  <div style={style} draggable={true} onClick={clickHandler} onMouseEnter={mouseEnter} onContextMenu={contextMenu} onDoubleClick={dblClickHandler} onDragEnter={dragEnterHandler}>
   </div>
   )  
 }
