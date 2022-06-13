@@ -13,12 +13,29 @@ const Pixel = () => {
   // let setStyle = style[1]
 
   return (
+    // //onClick()
+    // <div
+    //   onClick={() =>
+    //     setStyle({ height: '50px', width: '50px', backgroundColor: 'red' })
+    //   }
+    //   style={style}
+    // ></div>
+
+    // onMouseEnter()
     <div
-      onClick={() =>
-        setStyle({ height: '50px', width: '50px', backgroundColor: 'red' })
+      onMouseEnter={() =>
+        setStyle({ height: '50px', width: '50px', backgroundColor: 'green' })
       }
       style={style}
     ></div>
+
+    // //on DoubleClick()
+    // <div
+    //   onDoubleClick={() =>
+    //     setStyle({ height: '50px', width: '50px', backgroundColor: 'white' })
+    //   }
+    //   style={style}
+    // ></div>
   )
 }
 
