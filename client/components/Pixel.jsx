@@ -2,8 +2,8 @@ import React from 'react'
 
 function Pixel(props) {
   return (<div style ={{
-    height: '50px',
-    width: '50px',
+    height: '5vw',
+    width: '5vw',
     backgroundColor: 'turquoise'
   }}></div>)
 }
