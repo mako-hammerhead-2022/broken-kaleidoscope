@@ -1,14 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
+
 
 function Pixel () {
-  return (
-    <div style={{
-      fontFamily: 'Times New Roman',
-      height: '10px',
-      width: '10px',
-      backgroundColor: 'cornflowerblue'
+  const [style, setStyle] = useState({fontFamily: 'Times New Roman',height: '100px',width: '100px',backgroundColor: 'cornflowerblue'})
 
-    }}></div>
+
+  return (
+    <div style={style}></div>
   )
 }
 
