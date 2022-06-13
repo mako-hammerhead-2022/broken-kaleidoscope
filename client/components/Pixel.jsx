@@ -11,8 +11,9 @@ const Pixel = () => {
 
   
   const changeColor = (evt) => {
+    let colour = randomColour()
     setPixelStyle(
-      {...pixelStyle, backgroundColor: randomColour()}
+      {...pixelStyle, backgroundColor: colour}
     )
   }
 
@@ -22,9 +23,16 @@ const Pixel = () => {
     )
   }
 
+  const revertColour = (evt) => {
+    let colour = randomColour()
+    setPixelStyle(
+      {...pixelStyle, backgroundColor: colour}
+    )
+  }
+
 
   return (
-  <div style={pixelStyle} onClick={changeColor} onMouseEnter={allGreen}/>
+  <div style={pixelStyle} onClick={changeColor} onMouseEnter={allGreen} onMouseLeave={revertColour}/>
   )
 }
 
