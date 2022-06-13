@@ -5,7 +5,7 @@ const Pixel = () => {
 
   const randomColour = () => `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
 
-  const pixelRandomizer = {height: '5rem', width: '5rem', backgroundColor: randomColour()}
+  const pixelRandomizer = {height: '1rem', width: '1rem', backgroundColor: randomColour()}
   //this is where you do your state stuff and set the initial state.
   const [pixelStyle, setPixelStyle] = useState(pixelRandomizer)
 

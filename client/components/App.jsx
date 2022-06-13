@@ -2,78 +2,12 @@ import React from 'react'
 import Pixel from './Pixel.jsx'
 
 const App = () => {
-  return (
-    <React.Fragment>
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-      <Pixel />
-    </React.Fragment>
-  )
+  let pixelArray = [<Pixel />, <Pixel />, <Pixel />]
+  let pixels = Array.from({length: 10000},(v, i) => <Pixel key={i}/>)
+  return [
+    pixels
+  
+  ]
 }
 
 export default App
