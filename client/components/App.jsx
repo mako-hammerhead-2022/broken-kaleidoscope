@@ -1,16 +1,17 @@
-import React from 'react'
-import Pixel from './Pixel'
+import React, {useState} from 'react'
+import Pixels from './Pixels'
 
 const App = () => {
+  
   return(  
-  <>
-     
-  <div>React development has begun!</div>
     
-  
-
-  <Pixel/>
-  
+  <>
+ <Pixels/>
+ <Pixels/>
+ <Pixels/>
+ <Pixels/>
+ <Pixels/>
+ <Pixels/>
   </>
   )
 }
