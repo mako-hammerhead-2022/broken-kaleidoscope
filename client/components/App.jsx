@@ -1,12 +1,13 @@
 import React, {useState} from 'react'
 import Pixels from './Pixels'
-import clickHandler from './Pixels'
+
 const App = () => {
   
-  const array = [<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,]
+  // const array = [<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,]
   return(  
-    clickHandler(),
+  
   <>
+
  <Pixels/>
  <Pixels/>
  <Pixels/>

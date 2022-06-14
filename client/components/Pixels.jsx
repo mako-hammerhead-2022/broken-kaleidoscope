@@ -3,20 +3,19 @@ import React, {useState} from "react"
 const Pixels = () => {
 
   const [style, setStyle ] = useState({ 
-    height: 100,
-    width:100,
+    height: '100px',
+    width: '100px',
     backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
   })
    
-    const clickHandler = evt => {
-      setStyle({
-      backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
-      })
-    }
+  //added onclick handler function 
+    const clickHandler = evt => ({ 
+       backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+    })
 
   return (
-      <div onClick={clickHandler} style={style}></div>
-      
+      <div  style={style} onClick={clickHandler}> </div>
+      //returned onclick handler function 
     )
     }
 
