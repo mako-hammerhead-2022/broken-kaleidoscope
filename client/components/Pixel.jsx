@@ -38,7 +38,11 @@ function Pixel() {
     setStyle({...style, backgroundColor: 'black'})
    }
 
-  return (<div style={style} onClick={changePixel} onMouseEnter={greenPixel} onContextMenu={blackPixel}></div>)
+   const whitePixel = () => {
+    setStyle({...style, backgroundColor: 'white'})
+   }
+
+  return (<div style={style} draggable={true} onClick={changePixel} onMouseEnter={greenPixel} onContextMenu={blackPixel} onDragEnter={whitePixel}></div>)
 }
 
 // onClick={changePixel}
