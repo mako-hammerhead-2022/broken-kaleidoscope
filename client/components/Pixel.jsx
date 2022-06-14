@@ -31,6 +31,10 @@ const Pixel = () => {
     setColour('green')
   }
 
+  function handleContextMenu() {
+    setColour('black')
+  }
+
   // const handleClick = evt => {
   //   setColour({
   //     `#${Math.floor(Math.random() * 0x1000000)
@@ -51,6 +55,7 @@ const Pixel = () => {
       onDoubleClick={handleDoubleClick}
       onDragEnter={handleDrag}
       onMouseEnter={handleMouseEnter}
+      onContextMenu={handleContextMenu}
     ></div>
   )
 }
