@@ -17,6 +17,20 @@ const Pixel = () => {
     )
   }
 
+  function handleDoubleClick() {
+    {
+      setColour('white')
+    }
+  }
+
+  // const handleClick = evt => {
+  //   setColour({
+  //     `#${Math.floor(Math.random() * 0x1000000)
+  //       .toString(16)
+  //       .padStart(6, 0)}`
+  //   })
+  // }
+
   return (
     <div
       style={{
@@ -25,8 +39,11 @@ const Pixel = () => {
         backgroundColor: colour,
       }}
       onClick={handleClick}
+      onDoubleClick={handleDoubleClick}
     ></div>
   )
 }
+
+//onClick={() => handleClick()}
 
 export default Pixel
