@@ -3,22 +3,30 @@
 import React, {useState} from 'react'
 
 const Pixel = () => {
-  
-  const pixelStyle = {height: '5vw',
-  width: '5vw',
-  backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`}
-  
-  const [style, setStyle] = useState(pixelStyle)
+  const randomPixel = () => {
+    return `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+  }
 
-  function handleClick(pixelStyle) {
-    setStyle(pixelStyle)
+  const pixelStyle = () => {
+    return (
+      {
+      height: '5vw',
+      width: '5vw',
+      backgroundColor: randomPixel()
+      }
+    )
+
+  const [style, setStyle] = useState(pixelStyle())
+
+  const changePixel = () => {
+    const randomColor = randomPixel()
+    setStyle({...style, backgroundColor: randomColor})
   }
 
   return (
-    <>
-      <div style={style} onClick={handleClick}></div>
-    </>
+      <div style={style} onClick={changePixel}></div>
   )
-}
+  }
+} 
 
 export default Pixel
