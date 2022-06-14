@@ -29,7 +29,11 @@ function Pixel() {
     setStyle({...style, backgroundColor: color})
    }
 
-  return (<div style={style} onClick={changePixel}></div>)
+   function greenPixel() {
+    setStyle({...style, backgroundColor: 'green'})
+   }
+
+  return (<div style={style} onClick={changePixel} onMouseEnter={greenPixel}></div>)
 }
 
 // onClick={changePixel}
