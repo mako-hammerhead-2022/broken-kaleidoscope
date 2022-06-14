@@ -16,8 +16,8 @@ function Pixel() {
     return `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
   }
   function randomPixel () {
-    return {height: '5vw',
-    width: '5vw',
+    return {height: '1vw',
+    width: '1vw',
     backgroundColor: random()}
   }
   // const pixelStyle = {height: '5vw',
@@ -42,7 +42,11 @@ function Pixel() {
     setStyle({...style, backgroundColor: 'white'})
    }
 
-  return (<div style={style} draggable={true} onClick={changePixel} onMouseEnter={greenPixel} onContextMenu={blackPixel} onDragEnter={whitePixel}></div>)
+   const yellowPixel = () => {
+    setStyle({...style, backgroundColor: 'yellow'})
+   }
+
+  return (<div style={style} draggable={true} onClick={changePixel} onMouseEnter={greenPixel} onContextMenu={blackPixel} onDoubleClick={whitePixel} onDragEnter={yellowPixel}></div>)
 }
 
 // onClick={changePixel}
