@@ -4,18 +4,12 @@ import Pixels from './Pixels'
 const App = () => {
   
   // const array = [<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,]
-  return[  
   
-  <>
+  //The Array.from() static method creates a new, shallow-copied Array instance from an array-like or iterable object.
 
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- 
-  </>
-  ]
+  const pixelArr = Array.from({length:100000}, (p,i) => <Pixels key={i}/>);
+
+  return pixelArr
 }
 
 export default App
