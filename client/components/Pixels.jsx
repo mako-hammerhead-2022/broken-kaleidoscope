@@ -1,24 +1,27 @@
 import React, {useState} from "react"
 
-
- 
-
 const Pixels = () => {
 
   const [style, setStyle ] = useState({ 
     height: 100,
     width:100,
-    backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`})
-    
+    backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+  })
+   
+    const clickHandler = evt => {
+      setStyle({
+      backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+      })
+    }
+
   return (
-      <div style={style}></div>
-  
+      <div onClick={clickHandler} style={style}></div>
+      
     )
     }
 
-
-
     
+
   // function handleClick(evt) {
   //   setStyle(style + increment)
   // }
