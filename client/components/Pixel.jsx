@@ -23,6 +23,14 @@ const Pixel = () => {
     }
   }
 
+  function handleDrag() {
+    setColour('yellow')
+  }
+
+  function handleMouseEnter() {
+    setColour('green')
+  }
+
   // const handleClick = evt => {
   //   setColour({
   //     `#${Math.floor(Math.random() * 0x1000000)
@@ -33,6 +41,7 @@ const Pixel = () => {
 
   return (
     <div
+      draggable={true}
       style={{
         height: '20px',
         width: '20px',
@@ -40,6 +49,8 @@ const Pixel = () => {
       }}
       onClick={handleClick}
       onDoubleClick={handleDoubleClick}
+      onDragEnter={handleDrag}
+      onMouseEnter={handleMouseEnter}
     ></div>
   )
 }
