@@ -35,7 +35,11 @@ const Pixel = () => {
     setStyle({...style, backgroundColor: 'white'})
   }
 
-  return (<div style={style} onClick={changePixel} onMouseEnter={greenPixel} onContextMenu={blackPixel} onDoubleClick={whitePixel}></div>)
+  const yellowPixel = () => {
+    setStyle({...style, backgroundColor: 'yellow'})
+  }
+
+  return (<div draggable={true} style={style} onClick={changePixel} onMouseEnter={greenPixel} onContextMenu={blackPixel} onDoubleClick={whitePixel} onDragEnter={yellowPixel}></div>)
   }
 
 export default Pixel
