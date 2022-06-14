@@ -9,21 +9,23 @@ import React, {useState} from 'react'
 //   return (<div style={style} onClick={() =>  setStyle(style)}></div>)
 // }
 
-function Pixel() {
-  
-  function random () {
-    return Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)
-  }
+function Pixel(props) {
   
   const pixelStyle = {height: '5vw',
   width: '5vw',
-  backgroundColor: `#${random()}`}
+  backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`}
 
   const [style, setStyle] = useState(pixelStyle)
 
-  
+  function handleClick(pixelStyle) {
+    setStyle(pixelStyle)
+  }
 
-  return (<div style={style} onClick={() => setStyle(pixelStyle)}></div>)
+  return (
+    <>
+      <div style={style} onClick={handleClick}></div>
+    </>
+  )
 }
 
 // onClick={changePixel}
