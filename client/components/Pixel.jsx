@@ -1,20 +1,13 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, {useState} from 'react'
 
-
-// const changePixel = (evt) => {
-//  setStyle(style)
-// }
-
-// function Pixel() {
-//   return (<div style={style} onClick={() =>  setStyle(style)}></div>)
-// }
-
-function Pixel(props) {
+const Pixel = () => {
   
   const pixelStyle = {height: '5vw',
   width: '5vw',
   backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`}
-
+  
   const [style, setStyle] = useState(pixelStyle)
 
   function handleClick(pixelStyle) {
@@ -27,7 +20,5 @@ function Pixel(props) {
     </>
   )
 }
-
-// onClick={changePixel}
 
 export default Pixel

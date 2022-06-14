@@ -3,7 +3,6 @@ import Pixel from './Pixel'
 
 const App = () => (
   <div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -20,8 +19,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -38,8 +35,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -56,8 +51,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -74,8 +67,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -92,8 +83,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -110,8 +99,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -128,8 +115,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -146,8 +131,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -164,8 +147,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -182,8 +163,6 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
-    <div>
       <Pixel/>
       <Pixel/>
       <Pixel/>
@@ -200,7 +179,114 @@ const App = () => (
       <Pixel/>
       <Pixel/>
       <Pixel/>
-    </div>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/><Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
+      <Pixel/>
   </div>
 )
 
