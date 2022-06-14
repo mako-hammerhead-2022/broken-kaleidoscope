@@ -3,30 +3,30 @@ import React, {useState} from 'react'
 
 const Pixel = () => {
   const clickHandler = evt => {
-    setStyle({ height: '50px',
-    width: '50px',
+    setStyle({ height: '3px',
+    width: '3px',
     backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`,
     })
   }
-  const mouseGreen = evt => setStyle({height: '50px',
-  width: '50px',
+  const mouseGreen = evt => setStyle({height: '3px',
+  width: '3px',
   backgroundColor: '#173518', 
   })
-  const rightBlack = evt => setStyle({height: '50px',
-  width: '50px',
+  const rightBlack = evt => setStyle({height: '3px',
+  width: '3px',
   backgroundColor: 'black', 
   })
-   const dblWhite = evt => setStyle({height: '50px',
-  width: '50px',
+   const dblWhite = evt => setStyle({height: '3px',
+  width: '3px',
   backgroundColor: 'white', 
   })
-     const dragYellow = evt => setStyle({height: '50px',
-  width: '50px',
+     const dragYellow = evt => setStyle({height: '3px',
+  width: '3px',
   backgroundColor: 'yellow', 
   })
     const [style, setStyle] = useState({
-    height: '50px',
-    width: '50px',
+    height: '3px',
+    width: '3px',
     backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`,
   })
   event.preventDefault()
