@@ -9,8 +9,8 @@ const Pixel = () => {
 
   const pixelStyle = () => {
     return {
-      height: '5vw',
-      width: '5vw',
+      height: '0.5vw',
+      width: '0.5vw',
       backgroundColor: randomPixel()
       }
     }
