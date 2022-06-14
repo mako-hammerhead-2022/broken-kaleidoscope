@@ -4,7 +4,7 @@ import Pixels from './Pixels'
 const App = () => {
   
   // const array = [<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,<Pixels/>,]
-  return(  
+  return[  
   
   <>
 
@@ -13,123 +13,9 @@ const App = () => {
  <Pixels/>
  <Pixels/>
  <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
+ 
   </>
-  )
+  ]
 }
 
 export default App

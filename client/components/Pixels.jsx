@@ -16,13 +16,13 @@ const Pixels = () => {
 
 
     //added onMouseEnter function that when you hover over squares they turn green 
-    const mouseHandler = (evt) => {
+    const mouseHandler = () => {
       setStyle({height: '100px', width: '100px', backgroundColor: 'green'})
     }
 
 
   //added onclick handler function so when you click they switch colours
-  const clickHandler = (evt) => {
+  const clickHandler = () => {
     setStyle({height: '100px', width: '100px', backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}` 
   })
   }
