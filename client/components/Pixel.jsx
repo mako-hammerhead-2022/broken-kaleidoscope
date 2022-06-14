@@ -8,13 +8,12 @@ const Pixel = () => {
   }
 
   const pixelStyle = () => {
-    return (
-      {
+    return {
       height: '5vw',
       width: '5vw',
       backgroundColor: randomPixel()
       }
-    )
+    }
 
   const [style, setStyle] = useState(pixelStyle())
 
@@ -23,10 +22,11 @@ const Pixel = () => {
     setStyle({...style, backgroundColor: randomColor})
   }
 
-  return (
-      <div style={style} onClick={changePixel}></div>
-  )
+  const greenPixel = () => {
+    setStyle({...style, backgroundColor: 'green'})
   }
-} 
+
+  return (<div style={style} onClick={changePixel} onMouseEnter={greenPixel}></div>)
+  }
 
 export default Pixel
