@@ -26,7 +26,12 @@ const Pixel = () => {
     setStyle({...style, backgroundColor: 'green'})
   }
 
-  return (<div style={style} onClick={changePixel} onMouseEnter={greenPixel}></div>)
+  const blackPixel = (evt) => {
+    evt.preventDefault()
+    setStyle({...style, backgroundColor: 'black'})
+  }
+
+  return (<div style={style} onClick={changePixel} onMouseEnter={greenPixel} onContextMenu={blackPixel}></div>)
   }
 
 export default Pixel
