@@ -5,7 +5,7 @@ const Pixel = () =>  {
   const [style, setStyle] = useState({
     height: '10px',
     width: '10px',
-    backgroundColor: '#9E788F'
+    backgroundColor: `white`
   })
   return (
 <div style={style}></div>
