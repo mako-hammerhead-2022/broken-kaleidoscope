@@ -12,3 +12,14 @@ div {
   display: flex;
   flex-wrap: wrap;
 }
+
+.one {background-color: #b0b5bc;}
+.two {background-color: #bdb8b4;}
+.three {background-color: #c9b5ab;}
+.four { background-color: #dab093;}
+.five { background-color: #e79a6b;}
+.six { background-color: #f27f44;}
+.seven { background-color: #f05434;}
+.eight { background-color: #b22836;}
+.nine { background-color: #332036;}
+.ten { background-color: #05071e;}
