@@ -7,8 +7,16 @@ const Pixel = () =>  {
     width: '10px',
     backgroundColor: `white`
   })
+
+  const clickHandler = evt => {
+    setStyle({
+      ...style, 
+      backgroundColor: "purple"
+    })
+  }
   return (
-<div style={style}></div>
+<div style={style}
+onClick={clickHandler}></div>
   )
 }
 
