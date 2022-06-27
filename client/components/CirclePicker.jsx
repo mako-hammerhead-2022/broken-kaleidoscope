@@ -1,23 +1,24 @@
-// import React from 'react';
-// import {CirclePicker } from 'react-color';
+import React from 'react';
+import {CirclePicker } from 'react-color';
 
-// class Component extends React.Component {
-//   state = {
-//     background: '#332036',
-//   };
+const Pallete = () => {
+class Component extends React.Component {
+  state = {
+    background: '#332036',
+  };
 
-//   handleChangeComplete = (color) => {
-//     this.setState({ background: color.hex });
-//   };
+  handleChangeComplete = (color) => {
+    this.setState({ background: color.hex });
+  };
 
-//   render() {
-//     return (
-//       <CirclePicker
-//         color={ this.state.background }
-//         onChangeComplete={ this.handleChangeComplete }
-//       />
-//     );
-//   }
-// }
-
-// module.exports = Component
+  render() {
+    return (
+      <CirclePicker
+        color={ this.state.background }
+        onChangeComplete={ this.handleChangeComplete }
+      />
+    );
+  }
+}
+}
+export default Pallete
