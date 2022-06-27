@@ -1,9 +1,11 @@
 import React from 'react'
 import Pixel from './Pixel'
+import Blank from './blankPixel'
 
 const App = () => {
-  const pixArr = Array.from({length: 14100}, (v, i) => <Pixel key={i}/>)
-  return pixArr
+  return (
+    <Blank/ >
+    )
 }
 
 export default App
