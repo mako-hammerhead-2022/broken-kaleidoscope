@@ -1,19 +1,10 @@
 import React from 'react'
-// import Pixel from './Pixel'
-import Blank from './blankPixel'
-import Pallete from './CirclePicker'
+import Page from './Page'
 
 const App = () => {
   return (
-    <>
-    <div>
-    <Blank/ >
-    </div>
-    <div>
-    <Pallete />
-    </div>
-    </>
-    )
+<Page /> 
+)
 }
 
 export default App
