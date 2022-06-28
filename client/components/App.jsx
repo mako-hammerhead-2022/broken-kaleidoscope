@@ -1,9 +1,11 @@
 import React from 'react'
-import Page from './Page'
+import Palette from './Page'
 
 const App = () => {
   return (
-<Page /> 
+    <div>
+      <Palette /> 
+    </div>
 )
 }
 
