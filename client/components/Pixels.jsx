@@ -1,28 +1,21 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react'
 
-const Pixels = () => {
-  const size = 10
-  let color = 'black'
+const size = 10
 
+const Pixels = (props) => {
   const [style, setStyle] = useState({
-    backgroundColor: color,
+    height: `${size}px`,
+    width: `${size}px`,
+    backgroundColor: 'white',
   })
-
-  function colorPicked(newColor) {
-    color = newColor
-
-    setStyle({
-      height: `${size}px`,
-      width: `${size}px`,
-      backgroundColor: color,
-    })
-  }
 
   const handleClick = (evt) => {
     setStyle({
       height: `${size}px`,
       width: `${size}px`,
-      backgroundColor: color,
+      backgroundColor: props.color,
     })
   }
 
@@ -30,28 +23,17 @@ const Pixels = () => {
     setStyle({
       height: `${size}px`,
       width: `${size}px`,
-      backgroundColor: color,
+      backgroundColor: props.color,
     })
   }
 
   const dragEnterHandler = (evt) => {
-    const color = `#${Math.floor(Math.random() * 0x1000000)
-      .toString(16)
-      .padStart(6, 0)}`
     setStyle({
       height: `${size}px`,
       width: `${size}px`,
-      backgroundColor: color,
+      backgroundColor: props.color,
     })
   }
-
-  useEffect(() => {
-    setStyle({
-      height: `${size}px`,
-      width: `${size}px`,
-      backgroundColor: 'black',
-    })
-  }, [])
 
   return (
     <div
