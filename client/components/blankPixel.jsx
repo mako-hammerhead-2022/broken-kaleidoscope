@@ -3,7 +3,8 @@ import Pixel from './Pixel'
 
 
 const Blank = () => {
-  const pixArr = Array.from({length: 14100}, (v, i) => <Pixel key={i}/>)
+  // const {selectedColor} = props
+  const pixArr = Array.from({length: 1500}, (v, i) => <Pixel key={i} />)
     return (
       pixArr )
   }

@@ -3,7 +3,16 @@ import { TwitterPicker } from 'react-color'
 import Blank from './blankPixel'
 
 export default function Pallete(props) {
-  const [selectedColor, setColor] = useState('#322036')
+  const [selectedColor, setColor] = useState('#FF6900')
+  const [color, customColor] = useState('')
+
+ 
+  const handleChange = (color) => {
+    color = {
+      hex: '#b0b5bc'
+    }
+  }
+
 
   function changeColor(color) {
     setColor(color.hex)
@@ -11,8 +20,12 @@ export default function Pallete(props) {
 
   return (
     <>
-      <TwitterPicker />
+      <div className='page1' >
+      <TwitterPicker color={selectedColor} onChangeComplete={changeColor}/>
+      </div>
+      <div className='page'>
       <Blank />
+      </div>
     </>
   )
 }

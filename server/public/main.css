@@ -11,9 +11,24 @@ html, body, .viewport {
 div {
   display: flex;
   flex-wrap: wrap;
+
 }
 
-.one {background-color: #b0b5bc;}
+.page {
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  margin: 20px;
+}
+
+.page1 {
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  margin: 20px auto;
+}
+
+/* .one {background-color: #b0b5bc;}
 .two {background-color: #bdb8b4;}
 .three {background-color: #c9b5ab;}
 .four { background-color: #dab093;}
@@ -22,4 +37,4 @@ div {
 .seven { background-color: #f05434;}
 .eight { background-color: #b22836;}
 .nine { background-color: #332036;}
-.ten { background-color: #05071e;}
+.ten { background-color: #05071e;} */
