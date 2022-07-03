@@ -1,43 +1,67 @@
-import React, {useState} from "react"
-
-
- 
+import React, { useState, useEffect } from 'react'
 
 const Pixels = () => {
+  const size = 10
+  let color = 'black'
 
-  const [style, setStyle ] = useState({ 
-    height: 100,
-    width:100,
-    backgroundColor: `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`})
-    
+  const [style, setStyle] = useState({
+    backgroundColor: color,
+  })
+
+  function colorPicked(newColor) {
+    color = newColor
+
+    setStyle({
+      height: `${size}px`,
+      width: `${size}px`,
+      backgroundColor: color,
+    })
+  }
+
+  const handleClick = (evt) => {
+    setStyle({
+      height: `${size}px`,
+      width: `${size}px`,
+      backgroundColor: color,
+    })
+  }
+
+  const doubleClick = (evt) => {
+    setStyle({
+      height: `${size}px`,
+      width: `${size}px`,
+      backgroundColor: color,
+    })
+  }
+
+  const dragEnterHandler = (evt) => {
+    const color = `#${Math.floor(Math.random() * 0x1000000)
+      .toString(16)
+      .padStart(6, 0)}`
+    setStyle({
+      height: `${size}px`,
+      width: `${size}px`,
+      backgroundColor: color,
+    })
+  }
+
+  useEffect(() => {
+    setStyle({
+      height: `${size}px`,
+      width: `${size}px`,
+      backgroundColor: 'black',
+    })
+  }, [])
+
   return (
-      <div style={style}></div>
-  
-    )
-    }
-
-
-
-    
-  // function handleClick(evt) {
-  //   setStyle(style + increment)
-  // }
-  
-  // function handleChange(evt) {
-  //   console.log(evt.target.value)
-  //   setIncrement(evt.target.value)
-  // }
-  
-  // return(
-  //   <>
-    
-  //   <div>Style is {style}</div>
-  
-  //   <input type='number' onChange={handleChange} value={increment}/>
-  //     <button onClick={handleClick}>Number go up</button>
-  //   </>
-  // )
-  
-  
+    <div
+      style={style}
+      onDoubleClick={doubleClick}
+      draggable={true}
+      onClick={handleClick}
+      onDragEnter={dragEnterHandler}
+    ></div>
+  )
+}
 
 export default Pixels

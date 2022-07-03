@@ -1,23 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Pixels from './Pixels'
 
 const App = () => {
-  
-  return(  
-    
-  <>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
- <Pixels/>
-  </>
-  )
+  const pixelArr = Array.from({ length: 7100 }, (v, i) => <Pixels key={i} />)
+
+  return pixelArr
 }
 
 export default App
-
-
-
-
