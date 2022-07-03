@@ -4,7 +4,7 @@ import Blank from './blankPixel'
 
 export default function Pallete(props) {
   const [selectedColor, setColor] = useState('#FF6900')
-  const [color, customColor] = useState('')
+
 
  
   const handleChange = (color) => {
