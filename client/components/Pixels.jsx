@@ -9,35 +9,28 @@ const Pixels = (props) => {
     height: `${size}px`,
     width: `${size}px`,
     backgroundColor: 'white',
+    current: 'white',
   })
 
   const handleClick = (evt) => {
-    setStyle({
-      height: `${size}px`,
-      width: `${size}px`,
-      backgroundColor: props.color,
-    })
+    props.updateColor(props.index)
   }
 
   const doubleClick = (evt) => {
-    setStyle({
-      height: `${size}px`,
-      width: `${size}px`,
-      backgroundColor: props.color,
-    })
+    props.updateColor(props.index)
   }
 
   const dragEnterHandler = (evt) => {
-    setStyle({
-      height: `${size}px`,
-      width: `${size}px`,
-      backgroundColor: props.color,
-    })
+    props.updateColor(props.index)
   }
 
   return (
     <div
-      style={style}
+      style={{
+        height: `${size}px`,
+        width: `${size}px`,
+        backgroundColor: props.current,
+      }}
       onDoubleClick={doubleClick}
       draggable={true}
       onClick={handleClick}
