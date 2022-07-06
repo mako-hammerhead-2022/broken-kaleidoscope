@@ -1,4 +1,4 @@
-const testArr = [
+const Pattern1 = [
   'black',
   'red',
   'red',
@@ -3071,3 +3071,5 @@ const testArr = [
   'red',
   'black',
 ]
+
+export default Pattern1
