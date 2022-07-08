@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Pixels from './Pixels'
 
-import { postArt, getArt } from '../apiClient'
+import { postArt, getArt, deleteArt } from '../apiClient'
 //import Pattern1 from '../../SavedPictures/Pattern1.js'
 //import Sun from '../../SavedPictures/Sun.js'
 
@@ -44,15 +44,18 @@ const Colors = (props) => {
 
   function loadPic() {
     let artNameArr = window.prompt('Load a Masterpiece')
-    //setColors(['red'])
     getArt(artNameArr)
       .then((res) => {
-        console.log(typeof res)
         setColors(res)
       })
       .catch((error) => {
         console.error(error)
       })
+  }
+
+  function deletePic() {
+    let artName = window.prompt('Delete a Masterpiece')
+    deleteArt(artName)
   }
 
   function refreshPage() {
@@ -179,6 +182,12 @@ const Colors = (props) => {
         style={{ backgroundColor: 'grey', fontSize: size }}
         value="Load"
         onClick={() => loadPic()}
+      />
+      <input
+        type="button"
+        style={{ backgroundColor: 'grey', fontSize: size }}
+        value="Delete"
+        onClick={() => deletePic()}
       />
     </>
   )
