@@ -14,10 +14,12 @@ export function getArt(name) {
   console.log('api client get working', name)
   return request
     .get('/api/v1/art/getArt/' + name)
-    .send()
-    .then(() => {
-      return ['green']
+    .then((res) => {
+      console.log('This is res', res)
+      console.log(res.body)
+      return res.body
     })
+
     .catch((error) => {
       console.error(error)
     })

@@ -47,7 +47,7 @@ const Colors = (props) => {
     //setColors(['red'])
     getArt(artNameArr)
       .then((res) => {
-        console.log(res)
+        console.log(typeof res)
         setColors(res)
       })
       .catch((error) => {

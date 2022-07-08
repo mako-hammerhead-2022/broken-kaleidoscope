@@ -5,8 +5,8 @@ const fs = require('fs')
 
 router.post('/postArt', (req, res) => {
   fs.writeFile(
-    './SavedPictures/' + req.body.artName + '.js',
-    'const ' + req.body.artName + ' = ' + JSON.stringify(req.body.art),
+    './SavedPictures/' + req.body.artName + '.json',
+    JSON.stringify(req.body.art),
     (err) => {
       if (err) {
         console.error(err)
@@ -17,19 +17,14 @@ router.post('/postArt', (req, res) => {
 })
 
 router.get('/getArt/:art', (req, res) => {
-  console.log(req.params.art)
-  console.log('./SavedPictures/' + req.params.art + '.js')
-
   fs.readFile(
-    './SavedPictures/' + req.params.art + '.js',
+    './SavedPictures/' + req.params.art + '.json',
     'utf8',
     function read(err, data) {
       if (err) {
         console.error(err)
       }
-      console.log(data)
-
-      return data
+      return res.json(JSON.parse(data))
     }
   )
 })
