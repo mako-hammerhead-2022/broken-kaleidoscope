@@ -3,7 +3,7 @@ html, body, .viewport {
   margin: 0;
   text-align: center;
   background-color: black;
-  
+  cursor: crosshair;
 }
 
 #app {
@@ -13,6 +13,9 @@ html, body, .viewport {
   margin-top: 5%;
 }
 
+
+
+
 h1{
 
   color: white
@@ -21,7 +24,10 @@ h1{
 input {
   margin-top: 5px;
   margin-left: 0px;
+  cursor: pointer;
 }
+
+
 
 
 div {
@@ -31,4 +37,5 @@ div {
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
+  cursor: crosshair;
 }
