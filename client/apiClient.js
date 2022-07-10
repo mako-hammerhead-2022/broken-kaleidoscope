@@ -23,7 +23,7 @@ export function getArt(name) {
 
 export function deleteArt(name) {
   return request
-    .get('/api/v1/art/delArt/' + name)
+    .delete('/api/v1/art/delArt/' + name)
     .send({ artName: name })
     .then((res) => {
       return res.body

@@ -29,7 +29,7 @@ router.get('/getArt/:art', (req, res) => {
   )
 })
 
-router.get('/delArt/:art', (req, res) => {
+router.delete('/delArt/:art', (req, res) => {
   console.log('./SavedPictures/' + req.params.art + '.json')
   fs.unlink('./SavedPictures/' + req.params.art + '.json', (err) => {
     if (err) {
