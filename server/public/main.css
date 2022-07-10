@@ -27,3 +27,7 @@ div {
   border-style: solid;
   margin: 20px auto;
 }
+.pixel {
+  width: 1.5rem;
+  height: 1.5rem;
+}

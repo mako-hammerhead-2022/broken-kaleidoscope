@@ -3,8 +3,7 @@ import React, { useState } from 'react'
 function Pixel(props) {
   const {selectedColor} = props;
   const [style, setStyle] = useState({
-    height: '30px',
-    width: '30px',
+
     backgroundColor: `pixelColor`,
   })
   
@@ -13,7 +12,7 @@ function Pixel(props) {
   const [changeColor, setChangeColor] = useState(true)
 
   function applyColor() {
-    setPixelColor(selectedColor.pixelColor)
+    setPixelColor(selectedColor)
     setChangeColor(false)
   }
 
@@ -29,10 +28,10 @@ function Pixel(props) {
     setChangeColor(true)
   }
 
-      return (<div onClick={applyColor}
+      return (<div className='pixel' onClick={applyColor}
       onMouseEnter={changeColorHover}
       onMouseLeave={resetColor}
-      style={style}></div>
+      style={{backgroundColor: pixelColor}}></div>
     )}
     
     export default Pixel

@@ -7,11 +7,11 @@ export default function Pallete(props) {
 
 
  
-  const handleChange = (color) => {
-    color = {
-      hex: '#b0b5bc'
-    }
-  }
+  // const handleChange = (color) => {
+  //   color = {
+  //     hex: '#b0b5bc'
+  //   }
+  // }
 
 
   function changeColor(color) {
@@ -24,7 +24,7 @@ export default function Pallete(props) {
       <TwitterPicker color={selectedColor} onChangeComplete={changeColor}/>
       </div>
       <div className='page'>
-      <Blank />
+      <Blank selectedColor={selectedColor}/>
       </div>
     </>
   )
