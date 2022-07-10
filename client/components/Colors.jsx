@@ -7,25 +7,38 @@ import { postArt, getArt, deleteArt } from '../apiClient'
 
 //console.log(Pattern1)
 
+//Responsive queries
 let viewportWidth = window.innerWidth
-let size
+let arrayLength
+let inputSize
+let buttonSize
 
 if (viewportWidth == 1920) {
-  viewportWidth = 3071
-  size = '83px'
+  arrayLength = 3071
+  inputSize = '83px'
+  buttonSize = '50px'
 } else if (viewportWidth == 1536) {
-  viewportWidth = 2405
-  size = '59px'
+  arrayLength = 2405
+  inputSize = '59px'
+  buttonSize = '40px'
+} else if (viewportWidth == 768) {
+  arrayLength = 1023
+  inputSize = '15.5px'
+  buttonSize = '26px'
+} else if (viewportWidth == 320) {
+  arrayLength = 416
+  inputSize = '12px'
+  buttonSize = '12px'
 }
 
 const Colors = (props) => {
   const [color, setColor] = useState('white')
 
   const [colors, setColors] = useState(
-    Array.from({ length: viewportWidth }, (v, i) => 'white')
+    Array.from({ length: arrayLength }, (v, i) => 'white')
   )
 
-  const pixelArr = Array.from({ length: viewportWidth }, (v, i) => (
+  const pixelArr = Array.from({ length: arrayLength }, (v, i) => (
     <Pixels key={i} current={colors[i]} index={i} updateColor={updateColor} />
   ))
 
@@ -67,91 +80,91 @@ const Colors = (props) => {
       {pixelArr}
       <input
         type="button"
-        style={{ backgroundColor: 'red', fontSize: size }}
+        style={{ backgroundColor: 'red', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('red')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'orange', fontSize: size }}
+        style={{ backgroundColor: 'orange', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('orange')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'yellow', fontSize: size }}
+        style={{ backgroundColor: 'yellow', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('yellow')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'chartreuse', fontSize: size }}
+        style={{ backgroundColor: 'chartreuse', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('chartreuse')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'green', fontSize: size }}
+        style={{ backgroundColor: 'green', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('green')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'springGreen', fontSize: size }}
+        style={{ backgroundColor: 'springGreen', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('springGreen')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'cyan', fontSize: size }}
+        style={{ backgroundColor: 'cyan', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('cyan')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'dodgerBlue', fontSize: size }}
+        style={{ backgroundColor: 'dodgerBlue', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('dodgerBlue')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'blue', fontSize: size }}
+        style={{ backgroundColor: 'blue', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('blue')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'purple', fontSize: size }}
+        style={{ backgroundColor: 'purple', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('purple')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'magenta', fontSize: size }}
+        style={{ backgroundColor: 'magenta', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('magenta')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'salmon', fontSize: size }}
+        style={{ backgroundColor: 'salmon', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('salmon')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'sienna', fontSize: size }}
+        style={{ backgroundColor: 'sienna', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('sienna')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'grey', fontSize: size }}
+        style={{ backgroundColor: 'grey', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('grey')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'white', fontSize: size }}
+        style={{ backgroundColor: 'white', fontSize: inputSize }}
         value="  "
         onClick={() => setColor('white')}
       />
@@ -160,32 +173,32 @@ const Colors = (props) => {
         style={{
           backgroundColor: 'black',
           borderColor: 'white',
-          fontSize: size,
+          fontSize: inputSize,
         }}
         value="  "
         onClick={() => setColor('black')}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'grey', fontSize: size }}
+        style={{ backgroundColor: 'grey', fontSize: buttonSize }}
         value="Reset"
         onClick={() => refreshPage()}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'grey', fontSize: size }}
+        style={{ backgroundColor: 'grey', fontSize: buttonSize }}
         value="Save"
         onClick={() => savePic()}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'grey', fontSize: size }}
+        style={{ backgroundColor: 'grey', fontSize: buttonSize }}
         value="Load"
         onClick={() => loadPic()}
       />
       <input
         type="button"
-        style={{ backgroundColor: 'grey', fontSize: size }}
+        style={{ backgroundColor: 'grey', fontSize: buttonSize }}
         value="Delete"
         onClick={() => deletePic()}
       />
