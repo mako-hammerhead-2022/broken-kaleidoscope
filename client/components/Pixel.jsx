@@ -27,17 +27,20 @@ function Pixel(props) {
     setChangeColor(true)
   }
 
+  const dragColor = (evt) => {
+    setPixelColor(selectedColor)
+  }
+
   return (
     <div
       className="pixel"
       onClick={applyColor}
       // onMouseEnter={applyColor}
       // onMouseLeave={resetColor}
+      onDragEnter={dragColor}
       style={{ backgroundColor: pixelColor }}
     ></div>
   )
 }
 
 export default Pixel
-
-// style={style} onClick={selectedColor}
