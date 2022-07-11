@@ -30,4 +30,7 @@ div {
 .pixel {
   width: 1.5rem;
   height: 1.5rem;
+  border-width: thin;
+  border-color: black;
+  border-style: solid;
 }
