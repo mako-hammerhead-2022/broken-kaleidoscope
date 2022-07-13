@@ -41,4 +41,22 @@ router.delete('/delArt/:art', (req, res) => {
   })
 })
 
+router.get('/getGallery:gallery', (req, res) => {
+  let fileNames = []
+  fs.readdir('./SavedPictures/', (err, files) => {
+    files.forEach((file) => {
+      let fileName = file
+      fileName = fileName.replace('.json', '')
+      console.log(fileName)
+      fileNames.push(fileName)
+      console.log(fileNames)
+      return fileNames
+    })
+    if (err) {
+      console.error(err)
+    }
+    return res.sendStatus(201)
+  })
+})
+
 module.exports = router

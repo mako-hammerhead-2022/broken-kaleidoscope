@@ -21,6 +21,19 @@ export function getArt(name) {
     })
 }
 
+export function getGallery(name) {
+  return request
+    .get('/api/v1/art/getGallery/' + name)
+    .then((res) => {
+      console.log(res)
+      return res.body
+    })
+
+    .catch((error) => {
+      console.error(error)
+    })
+}
+
 export function deleteArt(name) {
   return request
     .delete('/api/v1/art/delArt/' + name)
